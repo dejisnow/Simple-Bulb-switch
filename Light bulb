@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script>
+    $(document).ready(function(){
+        
+      $(".on").click(()=>{
+    $(".on").addClass("active")
+    $(".light").addClass("active")
+    $(".off").removeClass("active")
+      
+      })
+      $(".off").click(()=>{
+    $(".off").addClass("active")
+    $(".light").removeClass("active")
+    $(".on").removeClass("active")
+      
+      })
+    
+    })
+        </script>
+        
+        
+    </head>
+    <body>
+        
+        <div class="light "> </div>
+        
+        <div class="switch">
+        <div class="on">On</div>
+        <div class="off">Off</div>
+            
+        </div>
+        
+        
+        
+    </body>
+</html>
