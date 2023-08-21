@@ -1,16 +1,53 @@
 body {
-    background-color:#0000ff;
+    background-color:#8fff8e;
 }
 .light{
  position:absolute ;
- width:100px;
- height:100px;
- top:10%;
- left:30%;
+ width:80px;
+ height:80px;
+ top:8%;
+ left:5%;
  background-color:grey;
  
  border-radius:50%;
 }
+.light.two{
+ position:absolute ;
+ width:50px;
+ height:50px;
+ top:10%;
+ left:40%;
+ background-color:coral;
+ 
+ border-radius:50%;
+}
+
+.light.three{
+ position:absolute ;
+ width:20px;
+ height:20px;
+ top:8%;
+ left:50%;
+ background-color:aqua;
+ 
+ border-radius:50%;
+}
+.light.four{
+ position:absolute ;
+ width:50px;
+ height:50px;
+ top:15%;
+ left:80%;
+ background-color:#ffff2f;
+ 
+ border-radius:50%;
+}
+
+
+
+
+
+
 .light.active{
 background-color:yellow;
     
@@ -25,7 +62,7 @@ background-color:yellow;
     
 }
 
-.light::before{
+.light.two::before{
 position:absolute ;
 content:" ";
 width:2px;
@@ -33,10 +70,89 @@ height:50px;
 background-color:white;
 top:0;
 transform:translateY(-50px);
-left:48%;
+left:58%;
 
     
 }
+.light.two.active{
+background-color:aqua;
+    
+    box-shadow: 0 0 7px #fff, 
+    0 0 10px #fff, 
+    0 0 21px #fff, 
+    0 0 42px #0fa, 
+    0 0 82px #0fa, 
+    0 0 92px #0fa, 
+    0 0 102px #0fa,
+     0 0 151px #0fa;
+    
+}
+
+.light.three.active{
+background-color:blue;
+    
+    box-shadow: 0 0 7px #fff, 
+    0 0 10px #fff, 
+    0 0 21px #fff, 
+    0 0 42px #0fa, 
+    0 0 82px #0fa, 
+    0 0 92px #0fa, 
+    0 0 102px #0fa,
+     0 0 151px #0fa;
+    
+}
+
+
+.light.four.active{
+background-color:yellow;
+    
+    box-shadow: 0 0 7px #fff, 
+    0 0 10px #fff, 
+    0 0 21px #fff, 
+    0 0 42px #0fa, 
+    0 0 82px #0fa, 
+    0 0 92px #0fa, 
+    0 0 102px #0fa,
+     0 0 151px #0fa;
+    
+}
+
+
+
+
+.light.three::before{
+position:absolute ;
+content:" ";
+width:2px;
+height:50px;
+background-color:white;
+top:0;
+transform:translateY(-50px);
+left:68%;}
+
+
+
+.light.four::before{
+position:absolute ;
+content:" ";
+width:2px;
+height:50px;
+background-color:white;
+top:0;
+transform:translateY(-50px);
+left:78%;}
+
+
+
+
+
+
+
+
+
+
+
+
 .switch{
     display:grid;
     grid-auto-flow:column;
@@ -51,7 +167,7 @@ left:48%;
     
     border-bottom-left-radius:10px;
     border-bottom-right-radius:10px;
-    top:30%;
+    top:70%;
     left:20%;
 }
 .on,.off{
